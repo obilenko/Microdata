@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Microdata</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style>
+        main {
+            width: 470px;
+            
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+            padding: 10px;
+            margin: 20px;
+            clear: both;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        dl {
+            margin: 0;
+        }
+        img {
+            
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            box-shadow: 0 0 5px;
+            border-radius: 5px;
+        }
+        dt {
+            font-weight: bold;
+            padding:2px;
+        }
+        dd {
+            font-style: oblique;
+        }
+        header, h1 {
+            padding-bottom: 5px;
+            margin: 0px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <main>
+        <header><h1>Super Personal Information</h1></header>
+        <div id="itemscope" itemscope itemtype="http://schema.org/Person">
+            <dl>
+                <dt>Name:</dt>
+                <dd itemprop="name">Olesya Bilenko</dd>
+                <dt>Position:</dt>
+                <dd itemprop="jobTitle">Stay at home mother</dd>
+                <dt>Company:</dt>
+                <dd itemprop="worksFor">Bilenko Home Inc.</dd>
+                <dt>Email:</dt>
+                <dd itemprop="email">myemail@mail.com</dd>
+                <dt>Address:</dt>
+                <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+                    <span itemprop="addressLocality">Bilenko Land,&nbsp;</span>
+                    <span itemprop="addressRegion">IA</span>
+                    <span itemprop="addressCountry">USA</span>
+                    <span itemprop="postalCode">12345</span>
+                </dd>
+            </dl>
+            <img itemprop="image"  src="img/image.jpg" alt="Picture of Me" title=""/>
+        </div>
+    </main>
+
+</body>
+</html>
